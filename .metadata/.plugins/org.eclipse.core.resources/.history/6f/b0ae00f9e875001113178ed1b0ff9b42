@@ -9,12 +9,5 @@ public class CICDGitJenkinsIntegrationClass {
 		
 		System.out.println( " simpleification of cicd git jenkins pipeline integration");
 		System.out.println("addiotion updated ");
-		System.out.println("addiotion updated ");
-
-		System.out.println("addiotion updated ");
-
-		System.out.println("addiotion updated ");
-		System.out.println("addiotion updated ");
-
 	}
 }
