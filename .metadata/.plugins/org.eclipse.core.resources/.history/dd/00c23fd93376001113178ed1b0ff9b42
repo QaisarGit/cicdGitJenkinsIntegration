@@ -1,4 +1,21 @@
+# Ignore Git history
+.git
+.gitignore
 
+# Ignore local environment variables and secrets
+.env
+*.pod
+secrets.txt
+
+# Ignore local dependencies (let Docker install them instead)
+node_modules/
+__pycache__/
+venv/
+.venv/
+
+# Ignore build logs and documentation
+npm-debug.log*
+*.md
 
 # 1. Specify the base image
 FROM node:20-alpine
