@@ -1,0 +1,21 @@
+# 1. Specify the base image
+FROM node:20-alpine
+
+# 2. Set the working directory inside the container
+WORKDIR /app
+
+# 3. Copy dependency files first to leverage build cache
+COPY package*.json ./
+
+# 4. Install dependencies
+RUN npm install --production
+
+# 5. Copy the remaining application files
+COPY . .
+
+# 6. Expose the port your app runs on
+EXPOSE 3000
+
+# 7. Define the runtime command
+CMD ["node", "server.js"]
+
