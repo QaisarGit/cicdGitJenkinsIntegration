@@ -11,7 +11,10 @@ public class CICDGitJenkinsIntegrationClass {
 		System.out.println("addiotion updated ");
 		System.out.println("addiotion updated ");
 
-		System.out.println("docker file added ");
+		System.out.println("addiotion updated ");
+
+		System.out.println("addiotion updated ");
+		System.out.println("addiotion updated ");
 
 	}
 }
