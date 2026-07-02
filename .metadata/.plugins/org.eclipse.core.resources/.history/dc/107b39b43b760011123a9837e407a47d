@@ -1,0 +1,18 @@
+# 1. Use the official Node.js runtime as a base image
+FROM node:20-alpine
+
+# 2. Set the working directory inside the container
+WORKDIR /app
+
+# 3. Copy package files and install dependencies
+COPY package*.json ./
+RUN npm ci --only=production
+
+# 4. Copy the rest of your application code
+COPY . .
+
+# 5. Expose the port your app runs on
+EXPOSE 3000
+
+# 6. Define the command to start your application
+CMD ["npm", "start"]
